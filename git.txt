@@ -1,11 +1,70 @@
-git clone -> sirve para clonar un repositorio de GitHub en mi ordenador
+1. git clone
+(base) inesgonzalez@MacBook-Air-de-Ines ~ % git clone https://github.com/inesgonzalez29/p1-fork.git
+Cloning into 'p1-fork'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 5 (from 1)
+Receiving objects: 100% (6/6), done.
+(base) inesgonzalez@MacBook-Air-de-Ines ~ %
+Sirve para clonar un repositorio
 
-git status -> sirve para ver el estado de mi repositorio y saber qué archivos han cambiado
+2. git status
+(base) inesgonzalez@MacBook-Air-de-Ines p1-fork % git status
+On branch main
+Your branch is up to date with 'origin/main'.
 
-git add -> sirve para preparar archivos para guardarlos en un commit
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	git.txt
 
-git commit -> sirve para guardar cambios en mi repositorio local
+nothing added to commit but untracked files present (use "git add" to track)
+(base) inesgonzalez@MacBook-Air-de-Ines p1-fork % 
+Sirve para ver el estado
 
-git push -> sirve para subir los cambios a GitHub
+3. git add
+(base) inesgonzalez@MacBook-Air-de-Ines p1-fork % git add git.txt
+(base) inesgonzalez@MacBook-Air-de-Ines p1-fork % git status
+On branch main
+Your branch is up to date with 'origin/main'.
 
-git checkout -> sirve para cambiar de rama
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   git.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+
+(base) inesgonzalez@MacBook-Air-de-Ines p1-fork % 
+Sirve para añadir archivos
+
+4. git commit
+base) inesgonzalez@MacBook-Air-de-Ines p1-fork % git commit -m "Creado git.txt"
+[main 94e40ab] Creado git.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 git.txt
+(base) inesgonzalez@MacBook-Air-de-Ines p1-fork % 
+Sirve para guardar cambios
+
+
+5. git push
+
+(base) inesgonzalez@MacBook-Air-de-Ines p1-fork % git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 734 bytes | 367.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/inesgonzalez29/p1-fork.git
+   07720b5..27fb4c7  main -> main
+(base) inesgonzalez@MacBook-Air-de-Ines p1-fork % git checkout -b prueba-rama
+Switched to a new branch 'prueba-rama'
+
+Sirve para subirlos a GitHub
+
+6. git checkout 
+(base) inesgonzalez@MacBook-Air-de-Ines p1-fork % git checkout -b practica1
+Sirve para cambiar de rama
+
